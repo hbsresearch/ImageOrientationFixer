@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="./vendor/autoload.php" colors="true">
     <testsuites>
-        <testsuite name="Image Orientation Fix Test Suite">
+        <testsuite name="Image Orientation Fixer Test Suite">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

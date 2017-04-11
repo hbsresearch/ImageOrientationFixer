@@ -6,15 +6,13 @@
  * file that was distributed with this source code.
  */
 
-namespace ImageOrientationFix;
+namespace ImageOrientationFixer;
 
 /**
- * Class ImageOrientationFix
- * @see https://github.com/JellyBellyDev/FixImageOrientationByExif
+ * Class ImageOrientationFixer
  * @author Raphaël Davaillaud rdavaillaud@hbs-research.com
- * @author Andrea Giannantonio a.giannantonio@gmail.com
  */
-class ImageOrientationFix
+class ImageOrientationFixer
 {
     const IMG_FLIP_HORIZONTAL = 1;
     const IMG_FLIP_VERTICAL = 2;

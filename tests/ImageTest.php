@@ -1,5 +1,5 @@
 <?php
-use ImageOrientationFix\Image;
+use ImageOrientationFixer\Image;
 $original = '\PHPUnit\Framework\TestCase';
 $alias = '\PHPUnit_Framework_TestCase';
 
@@ -22,7 +22,7 @@ class ImageTest extends PHPUnit_Framework_TestCase
     public function testConstructImageClass()
     {
         $image = new Image($this->getInputImagesPath() . $this->fileNameImageLandscape);
-        $this->assertInstanceOf('ImageOrientationFix\Image', $image);
+        $this->assertInstanceOf('ImageOrientationFixer\Image', $image);
     }
 
     public function testGetFilePathInput()

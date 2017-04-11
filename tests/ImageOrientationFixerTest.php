@@ -1,5 +1,5 @@
 <?php
-use ImageOrientationFix\ImageOrientationFix;
+use ImageOrientationFixer\ImageOrientationFixer;
 $original = '\PHPUnit\Framework\TestCase';
 $alias = '\PHPUnit_Framework_TestCase';
 
@@ -7,7 +7,7 @@ if (!class_exists($alias) && class_exists($original)) {
     class_alias($original, $alias);
 }
 
-class ImageOrientationFixTest extends \PHPUnit_Framework_TestCase
+class ImageOrientationFixerTest extends \PHPUnit_Framework_TestCase
 {
 
     public function setUp()
@@ -50,7 +50,7 @@ class ImageOrientationFixTest extends \PHPUnit_Framework_TestCase
         $inputFullFilePathTmp = $this->getInputImagesPath() . $time . $filename;
         copy($inputFullFilePath, $inputFullFilePathTmp);
 
-        $iof = new ImageOrientationFix();
+        $iof = new ImageOrientationFixer();
         $iof->fix($inputFullFilePathTmp);
 
         $this->assertTrue(file_exists($inputFullFilePathTmp));
@@ -73,7 +73,7 @@ class ImageOrientationFixTest extends \PHPUnit_Framework_TestCase
         $inputFullFilePath = $this->getInputImagesPath() . $filename;
         $outputFullFilePath = $this->getOutputImagesPath() . $filename;
 
-        $iof = new ImageOrientationFix();
+        $iof = new ImageOrientationFixer();
         $iof->fix($inputFullFilePath, $outputFullFilePath);
 
         if ($orientation != 1) {

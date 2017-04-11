@@ -1,5 +1,5 @@
 {
-    "name": "rdavaillaud/image-orientation-fix",
+    "name": "rdavaillaud/image-orientation-fixer",
     "description": "Php class that Fix image orientation by exif data.",
     "version": "2.0.0",
     "keywords": [
@@ -7,25 +7,21 @@
         "orientation",
         "exif"
     ],
-    "homepage": "http://github.com/rdavaillaud/ImageOrientationFix",
+    "homepage": "http://github.com/rdavaillaud/ImageOrientationFixer",
     "license": "MIT",
     "authors": [
         {
             "name": "Raphael Davaillaud",
             "email": "rdavaillaud@hbs-research.com"
-        },
-        {
-            "name": "Andrea Giannantonio",
-            "email": "a.giannantonio@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "ImageOrientationFix\\": "src/"
+            "ImageOrientationFixer\\": "src/"
         }
     },
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=5.4.0",
         "ext-gd": "*"
     },
     "require-dev": {

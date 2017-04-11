@@ -1,5 +1,5 @@
 <?php
-namespace ImageOrientationFix;
+namespace ImageOrientationFixer;
 
 class Image
 {
